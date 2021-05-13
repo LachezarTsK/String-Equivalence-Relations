@@ -1,4 +1,3 @@
-package stringEquivalenceRelations.gitHub;
 
 public class Solution {
 
@@ -61,7 +60,7 @@ class UnionFind {
     return parent[ch];
   }
 
-  // The smaller lexicographical character is made a parent of the larger lexicographical character.
+  // The lexicographically smaller character is made a parent of the lexicographically larger character.
   public void union(int ch_01, int ch_02) {
     if (ch_01 < ch_02) {
       parent[ch_02] = ch_01;
